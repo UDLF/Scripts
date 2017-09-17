@@ -1,0 +1,45 @@
+Welcome!
+
+This script aims to facilitate the implementation
+of new methods in the Unsupervised Distance Learning Framework (UDLF).
+
+We appreciate and thank you for the interest in our project!
+
+---------
+
+WARNING:
+
+Before implementating new methods, make sure that you agree
+with the GPLv2 terms in which this software is licensed.
+
+---------
+
+INSTRUCTIONS:
+
+You need to inform the path of a file with the information of the
+method you desire to implement.
+Notice that:
+1) The name of the new method is given by the name of your file.
+   Ex: If your file is called "myMethod.txt", your method will be
+       called myMethod.
+2) The file presents the parameters of the new method.
+Declarations are made following the syntax:
+PARAMETER_NAME:PARAMETER_TYPE = DEFAULT_VALUE
+
+Available types are:
+UINT: unsigned integer
+DBL:  double (floating point/real)
+BOL:  boolean
+STR:  string
+
+OBS: If the PARAMETER_TYPE is STR (string), you should list the
+possible/accepted values separated by ",". The first element of
+the list is considered as the default value.
+
+Example:
+NEAREST_NEIGHBORS:UINT = 20
+RADIUS_COEFFICIENT:DBL = 3.15
+ENABLE_OPTMIZATIONS:BOL = TRUE
+CORRELATION_METRIC:STR = KENDALL,JACARD,RBO
+
+---------
